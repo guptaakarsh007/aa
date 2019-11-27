@@ -1,0 +1,55 @@
+Microservices help in breaking the boundaries of large applications and build logically independent smaller systems inside system. E.g. using Amazon AWS you can build a cloud application with minimum effort. It’s a good example of what microservices can do.
+
+*With microservices, architects and developers can choose fit for purpose architectures and technologies for each microservice (polyglot architecture). This gives the flexibility to design better-fit solutions in a more cost-effective way.
+
+*As services are fairly simple and smaller in size, enterprises can afford to experiment new processes, algorithms, business logic, and so on. It enables enterprises to do disruptive innovation by offering the ability to experiment and fail fast.
+
+*Microservices enable to implement selective scalability i.e. each service could be independently scaled up or down and cost of scaling is comparatively less than monolithic approach.
+Microservices are self-contained, independent deployment modules enabling the substitution of one microservice with another similar microservice, when second one is not performing as per our need. It helps in taking right buy-versus-build decisions which are often the challenge for many enterprises.
+
+*Microservices help us build systems that are organic in nature(Organic systems are systems that grow laterally over a period of time by adding more and more functions to it). Because microservices are all about independently manageable services – it enable to add more and more services as the need arises with minimal impact on the existing services.
+Technology changes are one of the barriers in software development. With microservices, it is possible to change or upgrade technology for each service individually rather than upgrading an entire application.
+
+*As microservices package the service runtime environment along with the service itself, this enables having multiple versions of the service to coexist in the same environment.
+And finally, microservices also enable smaller, focused agile teams for development. Teams will be organized based on the boundaries of microservices.
+
+
+
+There are several microservices frameworks that you can use for developing for Java. Some of these are:
+Spring Boot: This is probably the best Java microservices framework that works on top of languages for Inversion of Control, Aspect Oriented Programming, and others.
+
+Jersey: This open-source framework supports JAX-RS APIs in Java is very easy to use.
+
+Swagger: Helps you in documenting API as well as gives you a development portal, which allows users to test your APIs.
+
+DOCKER:
+Docker is a software containerization platform, meaning you can build your application, package them along with their dependencies into a container and then these containers can be easily shipped to run on other machines. 
+
+For example: Lets consider a linux based application which has been written both in Ruby and Python. This application requires a specific version of linux, Ruby and Python. In order to avoid any version conflicts on user’s end, a linux docker container can be  created with the required versions of Ruby and Python installed along with the application. Now the end users can use the application easily by running this container without worrying about the dependencies or any version conflicts. 
+
+Multiple operating systems can run on the same machine
+Maintenance and Recovery were easy in case of failure conditions
+Total cost of ownership was also less due to the reduced need for infrastructure
+
+
+
+KUBERNATE:
+Kubernetes is an open-source system that handles the work of scheduling containers onto a compute cluster and manages the workloads to ensure they run as the user intends. 
+
+Automated Scheduling: Kubernetes provides advanced scheduler to launch container on cluster nodes based on their resource requirements and other constraints, while not sacrificing availability.
+
+Self Healing Capabilities: Kubernetes allows to replaces and reschedules containers when nodes die. It also kills containers that don’t respond to user-defined health check and doesn’t advertise them to clients until they are ready to serve. 
+
+Automated rollouts & rollback: Kubernetes rolls out changes to the application or its configuration while monitoring application health to ensure it doesn’t kill all your instances at the same time. If something goes wrong, with Kubernetes you can rollback the change.
+
+Horizontal Scaling & Load Balancing: Kubernetes can scale up and scale down the application as per the requirements with a simple command, using a UI, or automatically based on CPU usage.
+
+Kubernetes Architecture has the following main components:
+
+Master nodes
+Worker/Slave nodes
+
+Master Node
+The master node is responsible for the management of Kubernetes cluster. It is mainly the entry point for all administrative tasks. There can be more than one master node in the cluster to check for fault tolerance.
+
+
